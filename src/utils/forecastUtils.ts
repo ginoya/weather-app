@@ -1,3 +1,5 @@
+import { deafultLatitude, defaultLongitude } from "./constants";
+
 export const getWeatherIcon = (weather: string) => {
     switch (weather.toLowerCase()) {
         case 'clouds':
@@ -24,3 +26,23 @@ export const getGradientColor = (avgTemp: number) => {
         return 'linear-gradient(to right, #70db70, #33cc33)'; // Moderate temperature
     }
 };
+
+export const getLatitude = (position:any, locationData:any) =>{
+    if(locationData.latitude){
+        return locationData.latitude
+    }else if(position?.coords?.latitude){
+        return position.coords.latitude
+    }else{
+        return deafultLatitude
+    }
+}
+
+export const getLongitude = (position:any, locationData:any) =>{
+    if(locationData.longitude){
+        return locationData.longitude
+    }else if(position?.coords?.longitude){
+        return position.coords.longitude
+    }else{
+        return defaultLongitude
+    }
+}
