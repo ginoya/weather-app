@@ -1,29 +1,31 @@
 .weather-summary {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-    margin: 10px;
-  }
-  
-  .header {
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .weather-details {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .info {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-    color: #555;
-    margin: 10px; 
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin: 10px;
 }
 
-  
+.header {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.weather-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  color: #555;
+  margin: 10px;
+}
+
+.current-weather-error {
+  text-align: center;
+}

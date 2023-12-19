@@ -1,5 +1,5 @@
 
-export function getSevenDayForecast(forecastData:any) {
+export function extractDailyData(forecastData:any) {
   try {
     const dailyForecast = forecastData.list.reduce((result:any, item:any) => {
       const date = item.dt_txt.split(' ')[0];
